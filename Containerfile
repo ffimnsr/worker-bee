@@ -11,7 +11,7 @@ COPY --from=builder /src/workerd /usr/bin/workerd
 COPY /config.capnp /etc/workerd/
 COPY /workers /etc/workerd/workers
 
-STOPSIGNAL SIGINT
+STOPSIGNAL SIGKILL
 
 VOLUME [ "/etc/workerd" ]
 EXPOSE 8080
