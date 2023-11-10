@@ -1,0 +1,16 @@
+{
+  "name": "workerd_ui",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edward Fitz Abucay <gh:@ffimnsr>",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  }
+}

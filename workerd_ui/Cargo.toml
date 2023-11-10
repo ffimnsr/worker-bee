@@ -1,0 +1,17 @@
+[package]
+name = "workerd_ui"
+version = "0.1.0"
+authors = ["Edward Fitz Abucay <gh:@ffimnsr>"]
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+capnp = "0.18.4"
+gloo = "0.10.0"
+serde = { version = "1.0.192", features = ["derive"] }
+wasm-bindgen-futures = "0.4.38"
+web-sys = { version = "0.3.65", features = ["Document", "Element", "Node", "HtmlHeadElement", "ShadowRoot", "ShadowRootInit", "ShadowRootMode"] }
+yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
+
+[build-dependencies]
+capnpc = "0.18"
