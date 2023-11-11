@@ -1,0 +1,6 @@
+[build]
+rustc-wrapper = "/usr/local/bin/sccache"
+
+[term]
+progress.when = "auto"
+progress.width = 80

@@ -6,13 +6,19 @@ edition = "2021"
 build = "build.rs"
 
 [dependencies]
+axum = { version = "0.6.20", features = ["multipart", "macros"] }
 capnp = "0.18"
-capnp-rpc = "0.18"
+dotenv = "0.15.0"
 futures = "0.3"
+log = "0.4.20"
 serde = { version = "1.0.192", features = ["derive"] }
+serde_json = "1.0.108"
 surrealdb = { version = "1.0.0", features = ["kv-rocksdb"] }
-tokio = { version = "1.0", features = ["macros", "net", "rt"] }
+tokio = { version = "1.0", features = ["macros", "net", "rt", "signal"] }
 tokio-util = { version = "0.7", features = ["compat"] }
+tower-http = { version = "0.4.4", features = ["limit", "trace"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.17", features = ["env-filter"] }
 
 [build-dependencies]
 capnpc = "0.18"

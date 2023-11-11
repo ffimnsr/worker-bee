@@ -1,8 +1,5 @@
 {
   "rust-analyzer.linkedProjects": [
     "./workerd_ui_server/Cargo.toml"
-  ],
-  "emmet.includeLanguages": {
-    "rust": "html"
-  }
+  ]
 }
